@@ -14,6 +14,20 @@ body {
    margin-right: auto;
    max-width: 1600px;
 }
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: inherit;
+}
+h1, h2, h3, p{
+    margin: 0;
+}
 .conteiner{
 width: 1200px;
 padding-left: 15px;
@@ -30,8 +44,7 @@ margin-right: auto;
 .site-nav{
     display: flex;
     align-items: center;
-    border-color: #ececec;
-    border-top-width:  1px;
+    border-bottom: 1px solid #ececec;
 }
 
 .menu {
@@ -48,9 +61,9 @@ margin-right: auto;
 .logo{
     display: inline-block;
     width: 145px;
-    height: 31px;
-    margin-top: 24px;
-    margin-bottom: 25px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
 
     font-family: 'Raleway', sans-serif; 
     color:var(--accent-color);
@@ -96,7 +109,6 @@ margin-right: auto;
 .page-header {
  background-color:#2f303A;
  text-align: center;
- width: 1600px;
  margin-top: auto;
  padding-top: 0px;
  padding-bottom: 0px;
@@ -115,8 +127,8 @@ margin-right: auto;
  margin-bottom: 30px;
 
 }
-.first{
-display: inline-block;
+.button{
+text-align: center;
 padding: 10px 32px;
 font-family: 'Roboto', sans-serif;
 background-color: var(--accent-color);
@@ -125,7 +137,10 @@ font-size: 16px;
 font-weight: 700;
 letter-spacing: 0.06em;
 line-height: 30px;
+min-width: 216px;
+border-radius: 4px;
 margin-bottom: 200px;
+
 }
 .first:focus, 
 .first:hover {
@@ -219,17 +234,25 @@ display: flex;
 .team:not(:last-child){
     margin-right: 30px;
 }
+.team-picture{
+    display: inline-block;
+    margin-bottom: 30px;
+}
 .name {
     color: var(--title-text-color);
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.03em;
     line-height: 19px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 .activity{
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
+    text-align: center;
+    padding-bottom: 30px;
 }
 
 .page-footer {
@@ -246,12 +269,14 @@ display: flex;
 .page-footer .feedback:hover {
     color:var(--accent-color);
 }
-.logo-f{
+.conteiner .logo-f{
 font-family: 'Raleway', sans-serif;
     color: var(--accent-color);
     font-size: 26px;
     letter-spacing: 0.03em;
     padding-top: 60px;
+    display:inline-flex;
+    margin-bottom: 20px;
 
 }
 .logo-f span{
@@ -273,39 +298,52 @@ margin-left: 0px;
 
 
 
-
-.btn-group button{
+.section-btn{
+    margin-bottom: 34px;
+}
+ .btns:not(:last-child){
+    margin-right: 8px;
+}
+.btn-group{
+    float: left;
     font-family:'Roboto', sans-serif;
     background-color: #f5f4fa;
     letter-spacing: 0.03em;
     font-size: 16px;
     color: var(--title-text-color);
     line-height: 26px;
-
+     display: flex;
+     text-align: center;
+     border-radius: 4px;
+     min-width: 130px;
+     padding: 6px 22px;
 
 }
 
-.btn-group{
-    display: flex;
-}
 .other:focus,
 .other:hover{
     color: var(--primary-bg-color);
     background-color:#188CE8 ;
 }
 
-.btn-group .all{
+ .all{
+    display: inline-block;
     background-color: var(--accent-color);
     color: var(--primary-bg-color);
+    min-width: 73px;
+    padding: 6px 25px;
+
 }
 .all:focus,
 .all:hover {
     color:#188CE8 ;
     background-color: var(--primary-bg-color) ;
 }
+
 .project{
-    display: inline-flex;
+    display: flexbox;
     max-width: 1200px;
+    margin-top: 34px;
 }
 .project-portfolio:not(last-child){
     margin-right: 30px;

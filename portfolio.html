@@ -10,17 +10,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        a {
-            text-decoration: none;
-            /* Убираем подчёркивание */
-        }
-    </style>
-    <style>
-        ul {
-            list-style: none;
-        }
-    </style>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -47,16 +36,18 @@
         </div>
       </header>
 <main>
-    <section>
+    <section class="section">
         <div class="conteiner">
          <h1 class="visually-hidden">Послуги</h1>
-        <ul class="btn-group">
-        <li><button class="all" type="button">Усі</button></li>
-        <li><button class="btn-group other" type="button">Веб-сайти</button></li>
-        <li><button class="btn-group other" type="button">Додатки</button></li>
-        <li><button class="btn-group other" type="button">Дизайн</button></li>
-        <li><button class="btn-group other" type="button">Маркетинг</button></li>
+     <div class="section-btn">
+         <ul>
+        <li class="btns"><button class="btn-group all"type="button">Усі</button></li>
+        <li class="btns"><button class="btn-group other" type="button">Веб-сайти</button></li>
+        <li class="btns"><button class="btn-group other" type="button">Додатки</button></li>
+        <li class="btns"><button class="btn-group other" type="button">Дизайн</button></li>
+        <li class="btns"><button class="btn-group other" type="button">Маркетинг</button></li>
         </ul>
+        </div>
          <ul class="project">
                <li class="project-portfolio"><img src="imeges-portfolio/img1.jpg" alt="картинка1" width="370" height="294">
                 <h2 class="project-name">Технокряк</h2>
