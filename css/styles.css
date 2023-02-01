@@ -202,9 +202,6 @@ margin-right: 30px;
     padding-inline-start: 0px;
     
 }
-.foto-img  {
-    
-}
 .foto-img:not(:last-child)
 { 
     margin-right: 30px;
@@ -276,6 +273,8 @@ margin-left: 0px;
 
 
 
+
+
 .btn-group button{
     font-family:'Roboto', sans-serif;
     background-color: #f5f4fa;
@@ -283,6 +282,12 @@ margin-left: 0px;
     font-size: 16px;
     color: var(--title-text-color);
     line-height: 26px;
+
+
+}
+
+.btn-group{
+    display: flex;
 }
 .other:focus,
 .other:hover{
@@ -299,15 +304,21 @@ margin-left: 0px;
     color:#188CE8 ;
     background-color: var(--primary-bg-color) ;
 }
-
-.name {
+.project{
+    display: inline-flex;
+    max-width: 1200px;
+}
+.project-portfolio:not(last-child){
+    margin-right: 30px;
+}
+.project-name {
     letter-spacing: 0.06em;
     font-size: 18px;
     color: var(--title-text-color);
     font-weight: 700;
     line-height: 36px;
 }
-.deal {
+.project-deal {
     font-size: 16px;
     color: var(--primary-text-color);
     letter-spacing:0.03em ;
