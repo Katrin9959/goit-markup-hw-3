@@ -86,11 +86,10 @@ margin-right: auto;
 }
 .сontaсt {
     display: flex;
-    font-weight: 500;
+    justify-content: flex-end;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
     margin-left: 344px;
-    padding-inline-start: 0px;
 }
 .contact .iten + .iten {
     margin-left: 50px;
@@ -319,7 +318,7 @@ margin-left: 0px;
      border-radius: 4px;
      min-width: 130px;
      padding: 6px 22px;
-     border: 0px;
+     border:0px;
 
 }
 
