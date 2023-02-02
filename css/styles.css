@@ -298,7 +298,10 @@ margin-left: 0px;
 
 
 
-
+.bt{
+    display: flex;
+    margin-bottom: 34px;
+}
  .btns:not(:last-child){
     margin-right: 8px;
 }
@@ -341,8 +344,10 @@ margin-left: 0px;
 .project{
     display: flex;
     flex-wrap: wrap;
-    max-width: 1200px;
-    margin-top: 34px;
+    gap: 30px;
+    align-content: flex-start;
+
+    
 }
 .project-portfolio:not(last-child){
     margin-right: 30px;
