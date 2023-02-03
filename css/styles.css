@@ -27,6 +27,11 @@ a {
 h1, h2, h3, p{
     margin: 0;
 }
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 .container{
 width: 1200px;
 padding-left: 15px;
@@ -74,9 +79,12 @@ margin-right: auto;
 }
 
 .menu  .page{
+    display: block;
    font-weight: 500;
     color: var(--title-text-color);
     letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .page:focus, 
@@ -86,7 +94,10 @@ margin-right: auto;
 } 
 
 .menu .text{
+    display: block;
     color:var(--accent-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
    
 }
 .сontaсt {
@@ -96,15 +107,24 @@ margin-right: auto;
     color: var(--primary-text-color);
     margin-left: auto;
 }
+
+
 .contact .iten + .iten {
     margin-left: 50px;
 }
 .mail{
+    display: block;
     color: var(--primary-text-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .tel {
+    display: block;
  color:var(--primary-text-color) ;
  margin-left: 50px;
+ padding-top: 32px;
+    padding-bottom: 32px;
+
 }
 .contact a:hover {
     color: var(--accent-color);
@@ -133,7 +153,9 @@ margin-right: auto;
  line-height: 1.5;
  margin-right: 0px;
  margin-bottom: 30px;
-
+ width: 696px;
+margin-left: auto;
+margin-right: auto;
 }
 .button{
 text-align: center;
@@ -155,9 +177,6 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     color: var(--primary-bg-color);
     background-color: var(--btn-bg-color);
 }
-.button:active{
-    visibility: hidden;
-} 
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -192,11 +211,8 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     width: 270px;
 }
 .work-list .essence {
-    display: flex;
     font-weight: 400;
     line-height: 1.7;
-    margin-top: 0;
-    margin-bottom: 0;
 }
 .feature:not(:last-child){
 margin-right: 30px;
@@ -345,7 +361,7 @@ margin-left: 0px;
 }
 .bt{
     display: flex;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
     justify-content: center;
 }
  .btns:not(:last-child){
@@ -363,13 +379,14 @@ margin-left: 0px;
      padding: 6px 22px;
      border:0px;
      cursor: pointer;
-     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    
 }
 
 .other:focus,
 .other:hover{
     color: var(--primary-bg-color);
     background-color:#188CE8 ;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
  .all{
@@ -378,13 +395,13 @@ margin-left: 0px;
     color: var(--primary-bg-color);
     min-width: 73px;
     padding: 6px 25px;
-
+    
 }
 .all:focus,
 .all:hover {
     color:#188CE8 ;
     background-color: var(--primary-bg-color) ;
-
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
 }
 .project{
@@ -393,7 +410,7 @@ margin-left: 0px;
     gap:30px
 }
  .blok {
-     width: calc((100%-30px*2)/3);
+     width: calc((100% - 30px*2) / 3);
 }
 
 .main-foto{
